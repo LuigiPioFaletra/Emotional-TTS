@@ -1,6 +1,6 @@
 import pandas as pd
 
-def add_emotion_column(csv_input, csv_output):
+def add_emotions_column(csv_input, csv_output):
     """
     Aggiunge la colonna 'emotion' al CSV a partire dai token
     iniziali delle trascrizioni, riorganizza le colonne e salva il nuovo CSV.
@@ -30,7 +30,7 @@ def add_emotion_column(csv_input, csv_output):
 
 
 # Esempio di chiamata
-add_emotion_column(
+add_emotions_column(
     csv_input="./metadata.csv",
     csv_output="./metadata_new.csv"
 )
