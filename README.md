@@ -98,6 +98,8 @@ The generated speech was evaluated through emotion recognition and textual align
 
 ## Repository Structure
 
+The repository is organized as follows:
+
 ```
 main_repository/
 │
