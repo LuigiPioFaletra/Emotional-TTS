@@ -82,6 +82,19 @@ Below are the **confusion matrices** and **classification reports** for both the
 The emotional TTS experiments compared a **baseline Orpheus** model with a **fine-tuned Orpheus** model conditioned on emotion tokens.  
 The generated speech was evaluated through emotion recognition and textual alignment metrics.
 
+**Word Error Rate (WER)**
+
+To evaluate the **linguistic intelligibility** of the generated speech, the **Word Error Rate (WER)** was computed using the **Whisper-large-v3** ASR model on a set of 120 test prompts.  
+The metric measures the ratio of word insertions, deletions, and substitutions compared to the reference text.
+
+| Model | Average WER (%) |
+|-------|-----------------|
+| Baseline | 32.83 |
+| Fine-tuned | 10.61 |
+
+The results show a substantial improvement in intelligibility after fine-tuning, with the average WER decreasing from **32.83%** to **10.61%**.  
+This confirms that the fine-tuned model produces **more accurate and coherent speech outputs**, aligning more closely with the target text.
+
 **Confusion Matrices**
 
 | Baseline Model | Fine-tuned Model |
@@ -105,7 +118,7 @@ main_repository/
 │
 ├── classification/
 │ ├── extract_embeddings.py
-│ ├── mlp_training.py
+│ └── mlp_training.py
 │
 ├── tts/
 │ ├── add_emotions_column.py
@@ -119,7 +132,7 @@ main_repository/
 │ ├── emovo_transcriptions_emotions.py
 │ ├── emozionalmente_csv_file.py
 │ ├── split_dataset.py
-│ ├── unify_csv_files.py
+│ └── unify_csv_files.py
 │
 ├── results/
 │ ├── classification/
@@ -129,10 +142,10 @@ main_repository/
 │ │ └── validation_confusion_matrix.png
 │ │
 │ └── tts/
-│ ├── baseline_model_classification_report.png
-│ ├── baseline_model_confusion_matrix.png
-│ ├── fine-tuned_model_classification_report.png
-│ └── fine-tuned_model_confusion_matrix.png
+│ │ ├── baseline_model_classification_report.png
+│ │ ├── baseline_model_confusion_matrix.png
+│ │ ├── fine-tuned_model_classification_report.png
+│ │ └── fine-tuned_model_confusion_matrix.png
 │
 ├── .gitignore
 ├── LICENSE
