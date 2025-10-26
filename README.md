@@ -1,9 +1,9 @@
-# Emotional-TTS — Emotional Speech Synthesis for the Italian Language
+# Emotional-TTS - Emotional Speech Synthesis for the Italian Language
 
-This repository contains the source code, scripts, and resources used for the Master’s thesis  
-**“Dare voce alle emozioni: TTS emozionale per la lingua italiana”**  
+This repository contains the source code, scripts, and resources used for the Master's thesis  
+**"Dare voce alle emozioni: TTS emozionale per la lingua italiana"**  
 (*Giving Voice to Emotions: Emotional TTS for the Italian Language*)  
-by **Luigi Pio Faletra** — Master’s Degree in Artificial Intelligence and Security Engineering,  
+by **Luigi Pio Faletra** - Master's Degree in Artificial Intelligence and Security Engineering,  
 "Kore" University of Enna, Academic Year 2024/2025.
 
 ---
@@ -97,7 +97,7 @@ If you use this repository or its findings, please cite the following thesis:
 
 > **Faletra, L. P. (2025).**  
 > *Dare voce alle emozioni: TTS emozionale per la lingua italiana.*  
-> "Kore" University of Enna — Master’s Thesis in Artificial Intelligence and Security Engineering.
+> "Kore" University of Enna - Master's Thesis in Artificial Intelligence and Security Engineering.
 
 ---
 
