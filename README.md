@@ -50,28 +50,87 @@ The research integrates data preparation, emotion classification, and speech syn
 
 ---
 
+## Results
+
+The results are divided into two main parts:  
+1. **Emotion Classification** — performance of the MLP classifier on emotion labels.  
+2. **Emotional Speech Synthesis** — evaluation of the generated speech from both baseline and fine-tuned models.
+
+---
+
+### Emotion Classification
+
+The classifier was trained and evaluated using embeddings extracted from emotional speech corpora.  
+Below are the **confusion matrices** and **classification reports** for both the validation and test sets.
+
+**Confusion Matrices**
+
+| Validation Set | Test Set |
+|----------------|-----------|
+| ![Validation Confusion Matrix](results/classification/validation_confusion_matrix.png) | ![Test Confusion Matrix](results/classification/test_confusion_matrix.png) |
+
+**Classification Reports**
+
+| Validation Set | Test Set |
+|----------------|-----------|
+| ![Validation Report](results/classification/validation_classification_report.png) | ![Test Report](results/classification/test_classification_report.png) |
+
+---
+
+### Emotional Speech Synthesis
+
+The emotional TTS experiments compared a **baseline Orpheus** model with a **fine-tuned Orpheus** model conditioned on emotion tokens.  
+The generated speech was evaluated through emotion recognition and textual alignment metrics.
+
+**Confusion Matrices**
+
+| Baseline Model | Fine-tuned Model |
+|----------------|------------------|
+| ![Baseline Confusion Matrix](results/tts/baseline_model_confusion_matrix.png) | ![Fine-tuned Confusion Matrix](results/tts/fine-tuned_model_confusion_matrix.png) |
+
+**Classification Reports**
+
+| Baseline Model | Fine-tuned Model |
+|----------------|------------------|
+| ![Baseline Report](results/tts/baseline_model_classification_report.png) | ![Fine-tuned Report](results/tts/fine-tuned_model_classification_report.png) |
+
+---
+
 ## Repository Structure
 
 ```
 main_repository/
 │
 ├── classification/
-│   ├── extract_embeddings.py
-│   ├── mlp_training.py
+│ ├── extract_embeddings.py
+│ ├── mlp_training.py
 │
 ├── tts/
-│   ├── add_emotions_column.py
-│   ├── add_tokens.py
-│   ├── count_emotions.py
-│   ├── demos_speakers.py
-│   ├── demos_transcriptions_emotions.ipynb
-│   ├── emofilm_speakers.py
-│   ├── emofilm_transcriptions_emotions.py
-│   ├── emovo_speakers.py
-│   ├── emovo_transcriptions_emotions.py
-│   ├── emozionalmente_csv_file.py
-│   ├── split_dataset.py
-│   ├── unify_csv_files.py
+│ ├── add_emotions_column.py
+│ ├── add_tokens.py
+│ ├── count_emotions.py
+│ ├── demos_speakers.py
+│ ├── demos_transcriptions_emotions.ipynb
+│ ├── emofilm_speakers.py
+│ ├── emofilm_transcriptions_emotions.py
+│ ├── emovo_speakers.py
+│ ├── emovo_transcriptions_emotions.py
+│ ├── emozionalmente_csv_file.py
+│ ├── split_dataset.py
+│ ├── unify_csv_files.py
+│
+├── results/
+│ ├── classification/
+│ │ ├── test_classification_report.png
+│ │ ├── test_confusion_matrix.png
+│ │ ├── validation_classification_report.png
+│ │ └── validation_confusion_matrix.png
+│ │
+│ └── tts/
+│ ├── baseline_model_classification_report.png
+│ ├── baseline_model_confusion_matrix.png
+│ ├── fine-tuned_model_classification_report.png
+│ └── fine-tuned_model_confusion_matrix.png
 │
 ├── .gitignore
 ├── LICENSE
