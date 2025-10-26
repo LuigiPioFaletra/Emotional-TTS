@@ -52,6 +52,7 @@ The research integrates data preparation, emotion classification, and speech syn
 
 ## Repository Structure
 
+```
 main_repository/
 │
 ├── classification/
@@ -75,6 +76,7 @@ main_repository/
 ├── .gitignore
 ├── LICENSE
 └── README.md
+```
 
 ---
 
