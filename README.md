@@ -65,11 +65,17 @@ Below are the **confusion matrices** and **classification reports** for both the
 
 **Confusion Matrices**
 
+The confusion matrices illustrate the model’s ability to correctly classify each emotional category.
+Diagonal elements indicate correctly predicted emotions, while off-diagonal values represent misclassifications across emotional classes.
+
 | Validation Set | Test Set |
 |----------------|-----------|
 | ![Validation Confusion Matrix](results/classification/validation_confusion_matrix.png) | ![Test Confusion Matrix](results/classification/test_confusion_matrix.png) |
 
 **Classification Reports**
+
+The classification reports summarize the quantitative performance of the model in terms of **precision**, **recall**, **F1-score**, and **overall accuracy** for each emotion class.
+These metrics provide a detailed view of how well the model distinguishes between different emotional states.
 
 | Validation Set | Test Set |
 |----------------|-----------|
