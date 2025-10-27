@@ -207,5 +207,4 @@ If you use this repository or its findings, please cite the following thesis:
 
 **Author:** Luigi Pio Faletra  
 **Supervisor:** Prof. Moreno La Quatra  
-[luigipio.faletra@unikorestudent.it](mailto:luigipio.faletra@unikorestudent.it)  
-[GitHub Repository](https://github.com/LuigiPioFaletra/Emotional-TTS)
+[luigipio.faletra@unikorestudent.it](mailto:luigipio.faletra@unikorestudent.it)
