@@ -79,8 +79,8 @@ Below are the **confusion matrices** and **classification reports** for both the
 
 ### Emotional Speech Synthesis
 
-The emotional TTS experiments compared a **baseline Orpheus** model with a **fine-tuned Orpheus** model conditioned on emotion tokens.  
-The generated speech was evaluated through emotion recognition and textual alignment metrics.
+The emotional TTS experiments compared a **baseline Orpheus** model with a **fine-tuned Orpheus** model conditioned on emotion tokens.
+The generated speech was evaluated in terms of both **emotion consistency** (recognition accuracy) and **linguistic intelligibility** (Word Error Rate, WER), to assess the impact of fine-tuning on expressive and natural speech generation.
 
 **Word Error Rate (WER)**
 
@@ -97,11 +97,15 @@ This confirms that the fine-tuned model produces **more accurate and coherent sp
 
 **Confusion Matrices**
 
+The following plots summarize the emotion recognition results obtained from the synthesized speech for both models.
+
 | Baseline Model | Fine-tuned Model |
 |----------------|------------------|
 | ![Baseline Confusion Matrix](results/tts/baseline_model_confusion_matrix.png) | ![Fine-tuned Confusion Matrix](results/tts/fine-tuned_model_confusion_matrix.png) |
 
 **Classification Reports**
+
+The classification reports detail the per-class precision, recall, and F1-scores achieved by the emotion recognition model on synthesized samples.
 
 | Baseline Model | Fine-tuned Model |
 |----------------|------------------|
@@ -164,6 +168,15 @@ main_repository/
 - **Italian Emotional Speech Datasets**: DEMoS, EMOVO, EmoFilm, Emozionalmente  
 
 ---
+
+**Italian Emotional Speech Datasets**
+
+The experiments used the following publicly available corpora:
+
+- **DEMoS** — [https://zenodo.org/records/2544829](https://zenodo.org/records/2544829)  
+- **EmoFilm** — [https://zenodo.org/records/1326428](https://zenodo.org/records/1326428)  
+- **EMOVO** — [https://kaggle.com/datasets/sourabhy/emovo-italian-ser-dataset](https://kaggle.com/datasets/sourabhy/emovo-italian-ser-dataset)  
+- **Emozionalmente** — [https://zenodo.org/records/12616095](https://zenodo.org/records/12616095)
 
 ## Academic Reference
 
