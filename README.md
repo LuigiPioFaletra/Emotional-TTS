@@ -208,3 +208,9 @@ If you use this repository or its findings, please cite the following thesis:
 **Author:** Luigi Pio Faletra  
 **Supervisor:** Prof. Moreno La Quatra  
 [luigipio.faletra@unikorestudent.it](mailto:luigipio.faletra@unikorestudent.it)
+
+---
+
+### License
+
+This project is licensed under the terms of the MIT license. You can find the full license in the `LICENSE` file.
